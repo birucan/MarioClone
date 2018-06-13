@@ -1,0 +1,131 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://player.gd" type="Script" id=1]
+[ext_resource path="res://assets/sprites/mario/small mario/smariosta.png" type="Texture" id=2]
+[ext_resource path="res://assets/sprites/mario/big mario/mariosto.png" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/mario/big mario/mario1.png" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/mario/big mario/mario2.png" type="Texture" id=5]
+[ext_resource path="res://assets/sprites/mario/big mario/mario3.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/mario/big mario/mario4.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/mario/big mario/mariojmp.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/mario/big mario/mariocr.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/mario/small mario/smario1.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/mario/small mario/smario2.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/mario/small mario/smario3.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/mario/small mario/smariosto.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprites/mario/small mario/smariojmp.png" type="Texture" id=14]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "smallStand",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "bigStop",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "bigStand",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "bigWalk",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 8 ) ],
+"loop": true,
+"name": "bigJump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ) ],
+"loop": true,
+"name": "bigCrouch",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "smallWalk",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 13 ) ],
+"loop": true,
+"name": "smallStop",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ) ],
+"loop": true,
+"name": "smallJump",
+"speed": 5.0
+} ]
+_sections_unfolded = [ "Resource" ]
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 9.53081, 21.8648 )
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 7.94573 )
+
+[node name="player" type="KinematicBody2D"]
+
+position = Vector2( 31.4208, 94.6578 )
+input_pickable = true
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+_sections_unfolded = [ "Collision", "Pickable", "Transform", "collision" ]
+__meta__ = {
+"_edit_group_": true
+}
+SPEED = 1
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="." index="0"]
+
+position = Vector2( -0.578217, 2.98779 )
+frames = SubResource( 1 )
+animation = "smallStand"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+
+position = Vector2( -0.582878, 3.01415 )
+scale = Vector2( 0.841605, 0.725034 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Label" type="Label" parent="." index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -6.0
+margin_top = 20.0
+margin_right = 34.0
+margin_bottom = 34.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="CollisionShape2Dsmall" type="CollisionShape2D" parent="." index="3"]
+
+position = Vector2( -0.659711, 2.95133 )
+scale = Vector2( 0.60629, 1.01509 )
+shape = SubResource( 3 )
+
+

@@ -1,0 +1,76 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/tileset/1.png" type="Texture" id=1]
+[ext_resource path="res://assets/tileset/2.png" type="Texture" id=2]
+[ext_resource path="res://assets/tileset/3.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10.92, 10.5238 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 9.50747, 10 )
+
+[node name="Node" type="Node" index="0"]
+
+[node name="1" type="Sprite" parent="." index="0"]
+
+position = Vector2( 8.71508, 191.125 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="1" index="0"]
+
+position = Vector2( -0.00458813, -0.184052 )
+scale = Vector2( 0.25146, 0.251371 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="1/StaticBody2D" index="0"]
+
+position = Vector2( -1.71065e-05, 0.639021 )
+scale = Vector2( 2.92991, 3.01681 )
+shape = SubResource( 1 )
+
+[node name="2" type="Sprite" parent="." index="1"]
+
+position = Vector2( 13.606, 215.644 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="2" index="0"]
+
+position = Vector2( 0, -2.77449 )
+scale = Vector2( 1, 0.645087 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="UpperCollisionShape2D" type="CollisionShape2D" parent="2/StaticBody2D" index="0"]
+
+position = Vector2( -0.034698, 4.30931 )
+scale = Vector2( 0.840332, 1.24049 )
+shape = SubResource( 2 )
+
+[node name="3" type="Sprite" parent="." index="2"]
+
+position = Vector2( 39.4672, 216.527 )
+texture = ExtResource( 3 )
+
+

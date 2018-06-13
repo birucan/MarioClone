@@ -1,0 +1,56 @@
+[gd_resource type="TileSet" load_steps=6 format=2]
+
+[ext_resource path="res://assets/tileset/1.png" type="Texture" id=1]
+[ext_resource path="res://assets/tileset/2.png" type="Texture" id=2]
+[ext_resource path="res://assets/tileset/3.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10.92, 10.5238 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 9.50747, 10 )
+
+[resource]
+
+0/name = "1"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 16, 16 )
+0/is_autotile = false
+0/occluder_offset = Vector2( 8, 8 )
+0/navigation_offset = Vector2( 8, 8 )
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 2.92991, 0, 0, 3.01681, 7.99998, 8.63902 )
+} ]
+1/name = "2"
+1/texture = ExtResource( 2 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 16, 16 )
+1/is_autotile = false
+1/occluder_offset = Vector2( 8, 8 )
+1/navigation_offset = Vector2( 8, 8 )
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 0.840332, 0, 0, 1.24049, 7.9653, 12.3093 )
+} ]
+2/name = "3"
+2/texture = ExtResource( 3 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 16, 16 )
+2/is_autotile = false
+2/occluder_offset = Vector2( 8, 8 )
+2/navigation_offset = Vector2( 8, 8 )
+2/shapes = [  ]
+

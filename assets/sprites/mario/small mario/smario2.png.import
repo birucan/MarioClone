@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/smario2.png-26f6d1429e1a17b2923976002c781444.stex"
+
+[deps]
+
+source_file="res://assets/sprites/mario/small mario/smario2.png"
+source_md5="d8aa0278de00bafcbddc2fc0dd35e8c9"
+
+dest_files=[ "res://.import/smario2.png-26f6d1429e1a17b2923976002c781444.stex" ]
+dest_md5="51e8ca8f91aa72fca9ea18f37b9bec58"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0

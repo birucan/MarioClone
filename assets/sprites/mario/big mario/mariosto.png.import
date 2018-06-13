@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/mariosto.png-e23ca97487be2a44f1c47a4fd8a1f157.stex"
+
+[deps]
+
+source_file="res://assets/sprites/mario/big mario/mariosto.png"
+source_md5="77d3c3c561c96b901e0377099574da09"
+
+dest_files=[ "res://.import/mariosto.png-e23ca97487be2a44f1c47a4fd8a1f157.stex" ]
+dest_md5="e30f8fde3c3530e64b0db57d923ac86b"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0

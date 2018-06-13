@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/smariosto.png-253406b526c7b99a9beafb3c04e415ee.stex"
+
+[deps]
+
+source_file="res://assets/sprites/mario/small mario/smariosto.png"
+source_md5="9cfe363cafc0ffebceb2b198c37ada55"
+
+dest_files=[ "res://.import/smariosto.png-253406b526c7b99a9beafb3c04e415ee.stex" ]
+dest_md5="ec79169bf597f2ad7680ddf6cdc70f1b"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0

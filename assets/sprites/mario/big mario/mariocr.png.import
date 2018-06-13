@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/mariocr.png-79523d1c28cb541a26d4c5a86314024f.stex"
+
+[deps]
+
+source_file="res://assets/sprites/mario/big mario/mariocr.png"
+source_md5="7ce10886740ef219c7ea4308755e8c4f"
+
+dest_files=[ "res://.import/mariocr.png-79523d1c28cb541a26d4c5a86314024f.stex" ]
+dest_md5="023920f79225d619930ceb20dc6d7363"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0
