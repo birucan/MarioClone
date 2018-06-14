@@ -94,20 +94,20 @@ func _process(delta):
 			$AnimatedSprite.flip_h = velocity.x < 0
 			
 	#crouch
-	if Input.is_action_pressed("ui_down") && state == "big":
+	if Input.is_action_pressed("ui_down") and state == "big":
 		$AnimatedSprite.animation = "bigCrouch"
 		$AnimatedSprite.flip_h = velocity.x < 0
 
 	#returns to zero if no keys are pressed
 	if !Input.is_action_pressed("ui_left") && !Input.is_action_pressed("ui_right"):
 		if (velocity.x != 0):
-			deacelerate() 
+			deacelerate()
 	
 		
 	#calls standing animation
 	if velocity.x ==0 && on_floor:
 		$AnimatedSprite.animation = state+"Stand"
-		if Input.is_action_pressed("ui_down"):
+		if Input.is_action_pressed("ui_down") and state == "big":
 			$AnimatedSprite.animation = state+"Crouch"
 			$AnimatedSprite.flip_h = velocity.x < 0
 	
