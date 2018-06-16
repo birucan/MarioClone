@@ -4,7 +4,6 @@ extends KinematicBody2D
 # var a = 2
 # var b = "textvar"
 export (int) var SPEED
-var statePU
 var stateAction = "stand"
 #what
 const FLOOR_NORMAL = Vector2(0, -1)
@@ -38,10 +37,11 @@ func _process(delta):
 	
 	onair_time += delta
 
-	velocity += delta *GRAVITY
 	
+	if(velocity.y<600):
+		velocity += delta *GRAVITY
+		
 	move_and_slide(velocity, FLOOR_NORMAL)
-	
 	if is_on_floor():
 		onair_time = 0
 	
@@ -84,6 +84,7 @@ func _process(delta):
 			$AnimatedSprite.flip_h = velocity.x < 0
 			deacelerate()
 	#jump
+	
 	if on_floor && Input.is_action_just_pressed("ui_accept"):
 			$AnimatedSprite.animation = state+"Jump"
 			$AnimatedSprite.flip_h = velocity.x < 0
@@ -120,7 +121,7 @@ func _process(delta):
 
 	
 	move_and_slide(velocity * delta)
-	$Label.text = "x"+String(velocity.x)+" y"+String(velocity.y)
+	$Label.text = "x"+String(velocity.x)+" y"+String(velocity.y)+" \n delta " +String(delta)
 	
 func deacelerate():
 		if velocity.x >0:
